@@ -17,6 +17,4 @@ public class RibbonClientApplication {
         SpringApplication.run(RibbonClientApplication.class, args);
     }
 
-
-
 }
