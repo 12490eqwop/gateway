@@ -24,6 +24,6 @@ public class myRestController {
 
         System.out.println("port : " + serverPort);
 
-        return "hello backend!!  port  : " + serverPort;
+        return "hello service2!!  port  : " + serverPort;
     }
 }
