@@ -12,27 +12,27 @@ import org.springframework.web.client.RestTemplate;
 public class MyClientSideController {
 
 
-	@LoadBalanced
-	@Bean
-	RestTemplate restTemplate() {
-		return new RestTemplate();
-	}
-
-	@Autowired
-	RestTemplate restTemplate;
-
-
-
-
-	@RequestMapping("/service/hi")
-	public String service() {
-		String randomString = this.restTemplate.getForObject("http://service/hello", String.class);
-		return "Server Response :: " + randomString;
-	}
-
-	@RequestMapping("/service")
-	public String hi() {
-		String randomString = this.restTemplate.getForObject("http://service", String.class);
-		return "Server Response :: " + randomString;
-	}
+//	@LoadBalanced
+//	@Bean
+//	RestTemplate restTemplate() {
+//		return new RestTemplate();
+//	}
+//
+//	@Autowired
+//	RestTemplate restTemplate;
+//
+//
+//
+//
+//	@RequestMapping("/service/hi")
+//	public String service() {
+//		String randomString = this.restTemplate.getForObject("http://service/hello", String.class);
+//		return "Server Response :: " + randomString;
+//	}
+//
+//	@RequestMapping("/service")
+//	public String hi() {
+//		String randomString = this.restTemplate.getForObject("http://service", String.class);
+//		return "Server Response :: " + randomString;
+//	}
 }

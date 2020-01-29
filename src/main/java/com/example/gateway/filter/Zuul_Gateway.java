@@ -31,7 +31,7 @@ public class Zuul_Gateway {
     }
 
     @Bean
-    public RouteFilter RouteFilter(){
+    public RouteFilter routeFilter(){
         return new RouteFilter();
     }
 
